@@ -1,0 +1,12 @@
+---
+name: build java project
+
+on:
+    workflow_dispatch: 
+
+jobs:
+    build:
+        uses: dummyrepos/workflows-apr26/.github/workflows/java_maven_build.yaml@main
+        with:
+            java_version: '21'
+            maven_command: 'package'
